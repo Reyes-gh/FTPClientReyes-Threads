@@ -22,8 +22,8 @@ public class FTPThreads {
             try {
                 //Haremos que cada hilo creado se ejecute y espere al siguiente,
                 //así no tendremos manejo de datos múltiple
-                //Si quitamos este try que tiene el join podremos crear conexiones simultáneas tal
-                //y como pide en el enunciado
+                //Si quitamos este try que tiene el join (quitando obviamente el join de igual manera
+                //podremos crear conexiones simultáneas tal y como pide en el enunciado
                 hilo.join();
             } catch (InterruptedException e) {
             }
